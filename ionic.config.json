@@ -1,0 +1,13 @@
+{
+  "name": "event-san",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/connpass/api",
+      "proxyUrl": "https://connpass.com/api/v1/event"
+    }
+  ]
+}
