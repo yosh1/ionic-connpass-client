@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 281:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var SearchPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,7 +99,7 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/event-san/src/pages/search/search.html"*/'<!--\n  Generated template for the SearchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="search">\n    <ion-title>検索</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="searchbar" ion-fixed>\n    <form action="" (keydown.enter)="getEvents($event)">\n      <ion-searchbar name="keywords" [(ngModel)]="keywords" placeholder="キーワード検索"></ion-searchbar>\n    </form>\n  </div>\n  <ion-list class="event-list">\n    <ng-container *ngFor="let event of events">\n      <button ion-item (click)="openEvent(event)">\n        <h2>{{event.title}}</h2>\n        <h3>{{event.catch}}</h3>\n        <h4>開催場所:</h4>\n        <p>{{event.address}} {{event.place}}</p>\n        <h4>イベント日時:</h4>\n        <p>\n          {{event.started_at | date: \'longDate\'}}{{event.started_at | date: \'shortTime\'}}\n          〜\n          {{event.ended_at | date: \'longDate\'}}{{event.ended_at | date: \'shortTime\'}}\n        </p>\n      </button>\n    </ng-container>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/event-san/src/pages/search/search.html"*/,
+            selector: 'page-search',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/event-searcher/src/pages/search/search.html"*/'<!--\n  Generated template for the SearchPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="search">\n    <ion-title>検索</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="searchbar" ion-fixed>\n    <form action="" (keydown.enter)="getEvents($event)">\n      <ion-searchbar name="keywords" [(ngModel)]="keywords" placeholder="キーワード検索"></ion-searchbar>\n    </form>\n  </div>\n  <ion-list class="event-list">\n    <ng-container *ngFor="let event of events">\n      <button ion-item (click)="openEvent(event)">\n        <h2>{{event.title}}</h2>\n        <h3>{{event.catch}}</h3>\n        <h4>開催場所:</h4>\n        <p>{{event.address}} {{event.place}}</p>\n        <h4>イベント日時:</h4>\n        <p>\n          {{event.started_at | date: \'longDate\'}}{{event.started_at | date: \'shortTime\'}}\n          〜\n          {{event.ended_at | date: \'longDate\'}}{{event.ended_at | date: \'shortTime\'}}\n        </p>\n      </button>\n    </ng-container>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/event-searcher/src/pages/search/search.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
