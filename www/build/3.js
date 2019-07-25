@@ -133,12 +133,10 @@ var BookmarkPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-bookmark',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/event-searcher/src/pages/bookmark/bookmark.html"*/'<!--\n  Generated template for the BookmarkPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="bookmark">\n    <ion-title>ブックマーク</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding #itemSliding *ngFor="let event of events">\n      <button ion-item (click)="openEvent(event)">\n        <h2>{{event.title}}</h2>\n        <h3>{{event.catch}}</h3>\n        <h4>開催場所:</h4>\n        <p>{{event.started_at | date: \'longDate\'}}{{event.started_at | date: \'shortTime\'}}\n          〜\n          {{event.ended_at | date: \'longDate\'}}{{event.ended_at | date: \'shortTime\'}}\n        </p>\n      </button>\n      <ion-item-options slide="right">\n        <button ion-button color="danger" icon-start (click)="doDelete(event, itemSliding)">\n          <ion-icon name="trash"></ion-icon>\n          削除\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/event-searcher/src/pages/bookmark/bookmark.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_bookmark_bookmark__["a" /* BookmarkProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__providers_bookmark_bookmark__["a" /* BookmarkProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_bookmark_bookmark__["a" /* BookmarkProvider */]) === "function" && _d || Object])
     ], BookmarkPage);
     return BookmarkPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=bookmark.js.map
